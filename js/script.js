@@ -13,16 +13,10 @@
   });
 })(jQuery);
 
-$(document).on("click", function () {
-  document.getElementById("my_audio").play();
+document.addEventListener("DOMContentLoaded", function () {
   console.log("Shaadi me zaroor aana");
+  document.getElementById("my_audio").play();
 });
-
-function pauseAudio() {
-  document.getElementById("my_audio").pause();
-  console.log("Shaadi me pakka aana");
-  event.stopPropagation();
-}
 
 var countDownDate = new Date("March 1, 2024 00:00:00").getTime();
 
